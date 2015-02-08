@@ -1,0 +1,26 @@
+{
+  "name": "bouncer",
+  "title": "jQuery Bouncer",
+  "description": "Defers event handler until a duration has lapsed or a given event has occurred.",
+  "version": "1.0.0-alpha",
+  "homepage": "https://github.com/tableau-mkt/jquery.bouncer",
+  "author": {
+    "name": "Joel Walters",
+    "email": "jwalters@tableausoftware.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tableau-mkt/jquery.bouncer.git"
+  },
+  "bugs": "https://github.com/tableau-mkt/jquery.bouncer/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tableau-mkt/jquery.bouncer/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "1.7"
+  },
+  "keywords": []
+}

@@ -1,6 +1,6 @@
 {
   "name": "jquery.bouncer",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha2",
   "description": "Defers event handler until a duration has lapsed or a given event has occurred.",
   "homepage": "https://github.com/tableau-mkt/jquery.bouncer",
   "author": "Joel Walters <jwalters@tableausoftware.com>",

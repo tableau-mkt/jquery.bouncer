@@ -3,10 +3,7 @@
 Defers event handler until a duration has lapsed or
 
 ## Getting Started
-Download the [production version][min] or the [development version][max].
-
-[min]: https://raw.github.com/tableau-mkt/jquery.bouncer/master/dist/bouncer.min.js
-[max]: https://raw.github.com/tableau-mkt/jquery.bouncer/master/dist/bouncer.js
+Download the latest release on the [release page](https://github.com/tableau-mkt/jquery.bouncer/releases).
 
 ### Basic Usage
 

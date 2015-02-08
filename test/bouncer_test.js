@@ -27,36 +27,19 @@
     }
   });
 
-  test('is chainable', function() {
+  test('returns Promise', function() {
     expect(1);
-    // Not a bad test to run on collection methods.
-    strictEqual(this.elems.bouncer(), this.elems, 'should be chainable');
+    strictEqual(typeof this.elems.bouncer().then, 'function', 'returns Promise');
   });
 
-  test('is awesome', function() {
-    expect(1);
-    strictEqual(this.elems.bouncer().text(), 'awesome0awesome1awesome2', 'should be awesome');
-  });
+  // @TODO data plugin_bouncer exists with expected values and defaults upon initialization
 
-  module('jQuery.bouncer');
+  // @TODO clicking element adds activeClass and stops event propagation
 
-  test('is awesome', function() {
-    expect(2);
-    strictEqual($.bouncer(), 'awesome.', 'should be awesome');
-    strictEqual($.bouncer({punctuation: '!'}), 'awesome!', 'should be thoroughly awesome');
-  });
+  // @TODO passing options overrides defaults
 
-  module(':bouncer selector', {
-    // This will run before each test in this module.
-    setup: function() {
-      this.elems = $('#qunit-fixture').children();
-    }
-  });
+  // @TODO bouncer:resolve calls original event
 
-  test('is awesome', function() {
-    expect(1);
-    // Use deepEqual & .get() when comparing jQuery objects.
-    deepEqual(this.elems.filter(':bouncer').get(), this.elems.last().get(), 'knows awesome when it sees it');
-  });
+  // @TODO bouncer:reject rejects the deferred object and does not call event
 
 }(jQuery));

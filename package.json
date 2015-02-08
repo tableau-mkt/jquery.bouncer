@@ -1,11 +1,20 @@
 {
   "name": "jquery.bouncer",
-  "version": "0.0.0-ignored",
-  "engines": {
-    "node": ">= 0.8.0"
+  "version": "1.0.0-alpha",
+  "description": "Defers event handler until a duration has lapsed or a given event has occurred.",
+  "homepage": "https://github.com/tableau-mkt/jquery.bouncer",
+  "author": "Joel Walters <jwalters@tableausoftware.com>",
+  "main": "dist/jquery.bouncer.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tableau-mkt/jquery.bouncer.git"
   },
   "scripts": {
     "test": "grunt qunit"
+  },
+  "keywords": ["jquery-plugin", "event", "browser", "postpone", "delay", "defer"],
+  "dependencies": {
+    "jquery": ">=1.7"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.10.0",

@@ -1,4 +1,4 @@
-/*! jQuery Bouncer - v1.0.0-alpha5 - 2015-02-08
+/*! jQuery Bouncer - v1.0.0-beta - 2015-02-09
 * https://github.com/tableau-mkt/jquery.bouncer
 * Copyright (c) 2015 Joel Walters; Licensed MIT */
 /* jshint node:true */
@@ -34,7 +34,7 @@
     this.options = $.extend({}, defaults, options);
     this._defaults = defaults;
     this._name = pluginName;
-    return this.init();
+    this.init();
   }
 
   Plugin.prototype = {
@@ -50,7 +50,10 @@
           this.$element.removeClass(this.options.activeClass);
         }
         if (this.event) {
-          this.$element.trigger(this.event.type, this.event);
+          delete this.event.isDefaultPrevented;
+          delete this.event.isImmediatePropagationStopped;
+          delete this.event.isPropagationStopped;
+          this.$element.trigger($.Event(this.event.type, this.event));
         }
       }, this));
 
@@ -109,7 +112,7 @@
     this.each(function () {
       if (!$.data(this, 'plugin_' + pluginName)) {
         instance = new Plugin(this, options);
-        deferreds.push(instance);
+        deferreds.push(instance.deferred);
         $.data(this, 'plugin_' + pluginName, instance);
       }
     });

@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Bouncer Test Suite</title>
-  <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
-  <script src="../libs/jquery-loader.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
   <!-- Load local QUnit. -->
-  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
-  <script src="../libs/qunit/qunit.js"></script>
+  <link rel="stylesheet" href="../node_modules/qunitjs/qunit/qunit.css" media="screen">
+  <script src="../node_modules/qunitjs/qunit/qunit.js"></script>
   <!-- Load local lib and tests. -->
   <script src="../src/jquery.bouncer.js"></script>
-  <script src="bouncer_test.js"></script>
+  <script src="jquery.bouncer_test.js"></script>
   <!-- Removing access to jQuery and $. But it'll still be available as _$, if
        you REALLY want to mess around with jQuery in the console. REMEMBER WE
        ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
@@ -19,9 +18,8 @@
 <body>
   <div id="qunit"></div>
   <div id="qunit-fixture">
-    <a href="#anchor1">Link 1</a>
-    <a href="#anchor2">Link 2</a>
-    <a href="#anchor3">Link 3</a>
+    <a id="foo" href="#foo">foo</a>
+    <a id="bar" href="#bar">bar</a>
   </div>
 </body>
 </html>

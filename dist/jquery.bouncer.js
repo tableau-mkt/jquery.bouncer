@@ -1,4 +1,4 @@
-/*! jQuery Bouncer - v1.0.0-alpha4 - 2015-02-08
+/*! jQuery Bouncer - v1.0.0-alpha5 - 2015-02-08
 * https://github.com/tableau-mkt/jquery.bouncer
 * Copyright (c) 2015 Joel Walters; Licensed MIT */
 /* jshint node:true */

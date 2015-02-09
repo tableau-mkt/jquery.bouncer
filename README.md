@@ -1,4 +1,4 @@
-# jQuery Bouncer
+# jQuery Bouncer [![Build Status](https://travis-ci.org/tableau-mkt/jquery.bouncer.svg?branch=master)](https://travis-ci.org/tableau-mkt/jquery.bouncer)
 
 Defers event handler until a duration has lapsed or a given event has occurred.
 

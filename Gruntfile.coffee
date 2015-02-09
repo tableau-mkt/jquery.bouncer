@@ -83,3 +83,9 @@ module.exports = (grunt) ->
     'concat'
     'uglify'
   ]
+
+  # Default task.
+  grunt.registerTask 'test', [
+    'jshint'
+    'qunit'
+  ]

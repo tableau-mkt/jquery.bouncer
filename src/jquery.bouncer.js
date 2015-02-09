@@ -17,7 +17,7 @@
   }
   else if (typeof exports === 'object') {
     // Node/CommonJS
-    module.exports = factory(require('jquery'));
+    module.exports = factory;
   }
   else {
     // Browser globals

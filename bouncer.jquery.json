@@ -2,7 +2,7 @@
   "name": "bouncer",
   "title": "jQuery Bouncer",
   "description": "Defers event handler until a duration has lapsed or a given event has occurred.",
-  "version": "1.0.0-alpha3",
+  "version": "1.0.0-alpha4",
   "homepage": "https://github.com/tableau-mkt/jquery.bouncer",
   "author": {
     "name": "Joel Walters",

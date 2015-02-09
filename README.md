@@ -25,7 +25,17 @@ jQuery(function($) {
 ```
 
 ## Documentation
-_(Coming soon)_
+Provides an AMD and CommonJS/Browserify module loader along with a standard script include loader.
+
+### Browserify
+
+```js
+// Returns a function which you can pass a reference to your jQuery to.
+var $ = require('jquery');
+require('jquery.bouncer')($);
+```
+
+_(More soon)_
 
 ## Examples
 _(Coming soon)_
